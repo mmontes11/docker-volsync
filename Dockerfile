@@ -23,7 +23,8 @@ RUN apk add --no-cache \
   curl \
   coreutils \
   tzdata \
-  git \
+  rsync \
+  stunnel \
   && echo "Packages installed successfully" \
   && curl -fsSL "https://github.com/backube/volsync/archive/refs/tags/${VERSION}.tar.gz" -o /tmp/volsync.tar.gz \
   && echo "Downloaded VolSync version ${VERSION}" \
